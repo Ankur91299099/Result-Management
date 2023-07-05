@@ -1,0 +1,28 @@
+<app-header-login></app-header-login>
+
+<div class="marginResult">
+  <h3 class="text-center">Login Student</h3>
+</div>
+
+<div class="container col-md-5">
+    <div class="card">
+      <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="loginStudent()">
+          <fieldset class="form-group">
+            <label>Username</label>
+            <input type="text" formControlName="username" class="form-control" required />
+            <span id="error" *ngIf="username && username.invalid && username.touched">*Please Enter Username</span>
+          </fieldset>
+  
+          <fieldset class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password" required />
+            <span id="error" *ngIf="password && password.invalid && password.touched">*Please Enter Valid Password</span>
+          </fieldset>
+          
+          <div class="msg">{{msg}}</div>
+          <button type="submit" class="btn btn-success" [disabled]="loginForm.invalid">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>

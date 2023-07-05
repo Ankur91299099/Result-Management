@@ -1,0 +1,42 @@
+/* Login Page CSS    */
+.header_login {
+    padding: 0.8em;
+    text-align: center;
+    background-color: #06d6a0;
+  }
+  .login {
+    margin-top: 8em;
+  }
+  .loginbtn {
+    padding: 5px 15px 5px 15px;
+    background-color: lightblue;
+    border-radius: 9px;
+    font-weight: bold;
+  }
+  .loginSection {
+    margin-top: 3em;
+  }
+  .logoutli {
+    text-align: end;
+    font-weight: bold;
+  }
+  
+  /* add records*/
+  .addRecord {
+    text-align: end;
+    margin-top: 1em;
+  }
+  .addRecord a {
+    padding: 1em;
+    font-weight: bold;
+  }
+  .tableStyle {
+    max-width: 980px;
+  }
+  .table-bordered {
+    margin-left: 10em;
+  }
+  .marginResult {
+    margin-top: 2em;
+  }
+  

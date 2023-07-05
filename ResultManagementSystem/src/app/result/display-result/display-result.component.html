@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="back">
+  <a routerLink="/results/find-result" routerLinkActive="active">
+    Back
+  </a>
+</div>
+
+<div class="marginResult">
+    <h3 class="text-center">Result</h3>
+</div>
+<div class="container col-md-5">
+  <div  *ngIf="result$ | async as result">
+      <table>
+        <tr>
+          <td class="first-col">Roll No:</td>
+          <td>{{result.roll_no}}</td>
+        </tr>
+
+        <tr>
+          <td class="first-col">Name:</td>
+          <td>{{result.name}}</td>
+        </tr>
+
+        <tr>
+          <td class="first-col">Date Of Birth:</td>
+          <td>{{result.date_of_birth}}</td>
+        </tr>
+
+        <tr>
+          <td class="first-col">Score:</td>
+          <td>{{result.score}}</td>
+        </tr>
+      </table>
+  </div>
+</div>

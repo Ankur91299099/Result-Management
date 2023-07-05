@@ -1,0 +1,14 @@
+.header {
+    padding: 0.8em;
+    text-align: center;
+    background-color: #06d6a0;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.logoutli {
+    text-align: end;
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="addRecord">
+    <a routerLink="../add-result" routerLinkActive="active">
+      Add Record
+    </a>
+  </div>
+
+  <div class="tableStyle">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Date Of Birth</th>
+          <th>Score</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody  *ngIf="results$ | async as results">
+        <tr *ngFor="let result of results">
+          <td>{{result.roll_no}}</td>
+          <td>{{result.name}}</td>
+          <td>{{result.date_of_birth}}</td>
+          <td>{{result.score}}</td>
+          <td>
+            <a [routerLink]="['../edit-result', result.roll_no]"><img style="margin: 0px 5px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+            <a href="javascript: void(0);" (click)="removeResult(result)"><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

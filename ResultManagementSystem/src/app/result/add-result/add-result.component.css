@@ -1,0 +1,22 @@
+.marginResult{
+    margin: 3%;
+}
+
+fieldset{
+    margin-bottom: 2%;
+}
+
+button {
+    text-align: center;
+    color: black;
+    font-weight:500;
+    background-color: #06d6a0;
+}
+
+button:hover{
+    background-color: #0df1b4;
+}
+.msg {
+    color: red;
+    margin-bottom: 5%;
+}

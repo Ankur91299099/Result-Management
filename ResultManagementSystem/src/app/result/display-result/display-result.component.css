@@ -1,0 +1,22 @@
+.marginResult{
+    margin: 3%;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+}
+
+td{
+    padding: 8px;
+}
+
+.first-col {
+    text-align: right;
+    padding-right: 20px;
+    font-weight: 500;
+}
+.back{
+    font-size: 20px;
+    margin:2% 5%;
+}

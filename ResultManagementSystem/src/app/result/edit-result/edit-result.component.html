@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<div class="marginResult">
+    <h3 class="text-center">Edit Result</h3>
+  </div>
+  
+  <div class="container col-md-5">
+    <div class="card">
+      <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="editResult()">
+          <fieldset class="form-group">
+            <label>Roll No.</label>
+            <input type="number" class="form-control" formControlName="roll_no" readonly/>
+          </fieldset>
+  
+          <fieldset class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" formControlName="name" />
+          </fieldset>
+  
+          <fieldset class="form-group">
+            <label>Date Of Birth</label>
+            <input
+              type="date"
+              class="form-control"
+              formControlName="date_of_birth"
+            />
+          </fieldset>
+  
+          <fieldset class="form-group">
+            <label>Score</label>
+            <input type="number" class="form-control" formControlName="score" />
+          </fieldset>
+          
+          <button type="submit" class="btn btn-success">Edit</button>
+        </form>
+      </div>
+    </div>
+  </div>
